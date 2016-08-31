@@ -1,1 +1,1 @@
-[Beachape.com/aframe-playpen](beachape.com/aframe-playpen/)
+[Beachape.com/aframe-playpen](https://beachape.com/aframe-playpen/)
