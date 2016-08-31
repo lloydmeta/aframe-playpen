@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
+  <meta charset="utf-8">
+  <title>360 image sphere</title>
+  <meta name="description" content="360 Image">
+  <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
 </head>
 <body>
   <a-scene>
   <a-assets timeout="1000000">
+    <img id="logo-3go" src="../assets/images/3GO.png">
     <img id="mandarake-henya" src="../assets/images/henya-inside.jpg">
+
+    <a-asset-item id="model" src="../assets/models/pokeball/model.dae"></a-asset-item>
   </a-assets>
   <!-- Using the asset management system. -->
   <a-sky src="#mandarake-henya"></a-sky>
+  <a-collada-model src="#model" position="0 0 -6"></a-collada-model>
+  <a-image src="#logo-3go" width="10" height="5" position="-2 1.2 -3"
+               scale="0.2 0.2 0.2"></a-image>
 </a-scene>
 </body>
 </html>
